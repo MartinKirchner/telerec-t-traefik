@@ -5,6 +5,7 @@
     service_defaults:
       directory: "{{ docker_dir }}/traefik"
       name: traefik
+      version: "latest"
       domain: "home.m-kirchner.de"
       port: 8080
       traefik: true

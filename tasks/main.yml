@@ -6,13 +6,14 @@
       directory: "{{ docker_dir }}/traefik"
       name: traefik
       version: "latest"
-      domain: "traefik.example.com"
+      domain: "home.m-kirchner.de"
       port: 8080
       traefik: true
       external: true
       watchtower: true
       autoheal: true
-      internal_ip_ranges: []
+      internal_ip_ranges:
+        - 192.168.49.0/24
       skip_network_definition: false
       subdirs:
         - "dynamic"
